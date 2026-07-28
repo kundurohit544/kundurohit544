@@ -32,7 +32,7 @@ function render() {
       <article class="card" data-name="${esc(c.name)}" tabindex="0" style="--i:${i}">
         <div class="card-art">
           <img src="${esc(c.img)}" alt="${esc(c.name)}" loading="lazy" />
-          <span class="tag ${c.alignment}">${c.alignment}</span>
+          <span class="tag tag--${c.alignment}">${c.alignment}</span>
         </div>
         <div class="card-text">
           <h3>${esc(c.name)}</h3>
@@ -114,7 +114,7 @@ function openModal(name) {
   modalBody.innerHTML = `
     <img class="modal-art" src="${esc(c.img)}" alt="${esc(c.name)}" />
     <div class="modal-text">
-      <span class="tag ${c.alignment}">${c.alignment}</span>
+      <span class="tag tag--${c.alignment}">${c.alignment}</span>
       <h3 id="modal-name">${esc(c.name)}</h3>
       <p class="alias">${esc(c.alias)} · ${esc(c.team)} · first appeared ${c.debut}</p>
       <p class="bio">${esc(c.bio)}</p>
@@ -159,6 +159,7 @@ function renderQuiz() {
       quizBox.querySelector(`[data-i="${item.answer}"]`).classList.add("correct");
       if (picked === item.answer) quizScore++;
       else btn.classList.add("wrong");
+      btn.blur();
       setTimeout(() => {
         quizIndex++;
         renderQuiz();
