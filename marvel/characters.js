@@ -787,7 +787,7 @@ const TEAMS = [
     "name": "Cosmic",
     "slug": "starforce",
     "blurb": "Heroes whose battlefield is the whole universe.",
-    "img": "",
+    "img": "https://cdn.marvel.com/content/1x/260sfc_ons_crd_01.webp",
     "url": "https://www.marvel.com/teams-and-groups/starforce",
     "count": 2
   },

@@ -71,7 +71,7 @@ function renderTeams() {
   teamGrid.innerHTML = TEAMS.map(
     (t) => `
     <article class="team-card" data-team="${esc(t.name)}" tabindex="0">
-      <img src="${esc(t.img)}" alt="${esc(t.name)}" loading="lazy" />
+      ${t.img ? `<img src="${esc(t.img)}" alt="${esc(t.name)}" loading="lazy" />` : ""}
       <div class="team-info">
         <h3>${esc(t.name)}</h3>
         <p>${esc(t.blurb)}</p>

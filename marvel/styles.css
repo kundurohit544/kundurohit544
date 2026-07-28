@@ -104,6 +104,7 @@ img { display: block; }
 .tag {
   position: absolute; top: 10px; left: 10px; padding: 3px 10px; border-radius: 999px;
   font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #08080d;
+  white-space: nowrap;
 }
 .tag.hero { background: var(--gold); }
 .tag.villain { background: var(--red); color: #fff; }
@@ -147,6 +148,7 @@ img { display: block; }
 .quiz .progress { color: var(--muted); font-size: .85rem; margin-bottom: 8px; }
 .quiz .result { font-size: 1.25rem; font-weight: 700; }
 
+.modal[hidden] { display: none; }
 .modal { position: fixed; inset: 0; z-index: 40; background: rgba(4,4,8,.82); display: grid; place-items: center; padding: 20px; }
 .modal-card { position: relative; background: var(--panel); border: 1px solid #2a2a38; border-radius: 16px; max-width: 720px; width: 100%; max-height: 88vh; overflow: auto; }
 .modal-close { position: absolute; top: 10px; right: 12px; background: rgba(0,0,0,.55); color: #fff; border: 0; font-size: 1.6rem; line-height: 1; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; }
