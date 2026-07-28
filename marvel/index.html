@@ -3,54 +3,80 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Marvel Universe — Heroes, Films &amp; Legends</title>
+<title>Marvel Universe — Characters, Teams &amp; Sagas</title>
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header class="nav">
-  <a class="brand" href="#top">MARVEL<span>UNIVERSE</span></a>
+  <a class="brand" href="#top">MARVEL</a>
   <nav>
-    <a href="#heroes">Heroes</a>
-    <a href="#films">Films</a>
+    <a href="#characters">Characters</a>
+    <a href="#teams">Teams</a>
+    <a href="#films">Timeline</a>
     <a href="#quiz">Quiz</a>
-    <a href="#about">About</a>
   </nav>
 </header>
 
 <section id="top" class="hero">
   <div class="hero-inner">
     <p class="kicker">Fan-made tribute</p>
-    <h1>Earth's Mightiest Heroes</h1>
-    <p class="lede">Explore the characters, sagas and films of the Marvel Universe — from the Infinity Saga to the Multiverse.</p>
-    <a class="btn" href="#heroes">Meet the heroes</a>
+    <h1>Earth's Mightiest <span>Heroes</span></h1>
+    <p class="lede">A guide to <strong id="hero-count">0</strong> characters, <strong id="team-count">0</strong> teams and the sagas that connect them — with profiles and artwork from the official Marvel character pages.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#characters">Browse characters</a>
+      <a class="btn ghost" href="#quiz">Take the quiz</a>
+    </div>
   </div>
+  <div class="hero-strip" id="hero-strip"></div>
 </section>
 
 <main>
-  <section id="heroes" class="section">
-    <h2>Heroes</h2>
+  <section id="characters" class="section">
+    <div class="section-head">
+      <h2>Characters</h2>
+      <input id="search" type="search" placeholder="Search name, alias or power…" aria-label="Search characters" />
+    </div>
     <div class="filters" id="filters"></div>
+    <div class="filters align" id="alignments"></div>
+    <p class="count" id="result-count"></p>
     <div class="grid" id="hero-grid"></div>
+    <p class="empty" id="empty" hidden>No characters match that search.</p>
   </section>
 
-  <section id="films" class="section alt">
+  <section id="teams" class="section alt">
+    <h2>Teams &amp; Groups</h2>
+    <div class="team-grid" id="team-grid"></div>
+  </section>
+
+  <section id="films" class="section">
     <h2>Saga Timeline</h2>
     <ol class="timeline" id="timeline"></ol>
   </section>
 
-  <section id="quiz" class="section">
+  <section id="quiz" class="section alt">
     <h2>Trivia Quiz</h2>
     <div class="quiz" id="quiz-box"></div>
   </section>
 
-  <section id="about" class="section alt">
+  <section id="about" class="section">
     <h2>About</h2>
-    <p class="about">A fan-made, static tribute site built with plain HTML, CSS and JavaScript. Marvel, its characters and film titles are trademarks of Marvel Characters, Inc. This site is not affiliated with or endorsed by Marvel or The Walt Disney Company.</p>
+    <p class="about">A fan-made, dependency-free tribute site. Character bios and artwork come from the official
+      <a href="https://www.marvel.com/characters">marvel.com character pages</a>; every card links back to its source.
+      Marvel, its characters and logos are trademarks of Marvel Characters, Inc. This site is not affiliated with or
+      endorsed by Marvel or The Walt Disney Company.</p>
   </section>
 </main>
 
+<div class="modal" id="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+    <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
 <footer class="footer">Made by a fan · <a href="https://github.com/kundurohit544">github.com/kundurohit544</a></footer>
 
+<script src="characters.js"></script>
 <script src="data.js"></script>
 <script src="app.js"></script>
 </body>
