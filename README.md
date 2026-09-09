@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated Header Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Rohit%20Kundu&fontSize=48&fontColor=ffffff&desc=AI%20%26%20Machine%20Learning%20%7C%20Python%20Developer&descFontSize=20" width="100%" alt="Header Banner" />
+<img src="https://raw.githubusercontent.com/kundurohit544/kundurohit544/main/assets/header.svg" width="100%" alt="Rohit Kundu Header" />
 
 <!-- Dynamic Typing SVG Animation -->
 <a href="https://github.com/kundurohit544">
@@ -194,7 +194,7 @@ philosophy: "Code is like humor. When you have to explain it, it’s bad."
 <br/>
 
 <!-- Animated Footer Wave -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" alt="Footer Banner" />
+<img src="https://raw.githubusercontent.com/kundurohit544/kundurohit544/main/assets/footer.svg" width="100%" alt="Footer Wave" />
 
 <p align="center">
   <i>⚡ Designed with passion & code by <a href="https://github.com/kundurohit544"><b>Rohit Kundu</b></a> • Star ⭐ this repo if you like it!</i>
