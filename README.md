@@ -29,8 +29,8 @@
   <a href="https://github.com/kundurohit544" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
-  <a href="https://kundurohit544.github.io/portfolio/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-00F5D4?style=for-the-badge&logo=google-chrome&logoColor=black" alt="Portfolio" />
+  <a href="https://rohitkundu.netlify.app" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-00F5D4?style=for-the-badge&logo=netlify&logoColor=black" alt="Portfolio" />
   </a>
 </p>
 
@@ -127,7 +127,7 @@
       </p>
       <p>Clean, modern, and high-performance developer portfolio showcasing technical experience, projects, and personal roadmap.</p>
       <p align="center">
-        <a href="https://github.com/kundurohit544/portfolio"><b>View Project ➜</b></a>
+        <a href="https://rohitkundu.netlify.app" target="_blank"><b>Live Site 🌐</b></a> &nbsp;•&nbsp; <a href="https://github.com/kundurohit544/portfolio"><b>Repository ➜</b></a>
       </p>
     </td>
     <td width="50%" valign="top">
@@ -183,6 +183,9 @@
 
 <a href="https://www.linkedin.com/in/kundurohit544" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+<a href="https://rohitkundu.netlify.app" target="_blank">
+  <img src="https://img.shields.io/badge/Portfolio-Visit_Site-00F5D4?style=for-the-badge&logo=netlify&logoColor=black" alt="Portfolio" />
 </a>
 <a href="mailto:kundurohit544@gmail.com">
   <img src="https://img.shields.io/badge/Email-Send_Message-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
