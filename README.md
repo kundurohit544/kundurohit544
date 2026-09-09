@@ -65,9 +65,9 @@ philosophy: "Code is like humor. When you have to explain it, it’s bad."
 
 <div align="center">
 
-#### 🧠 Machine Learning & Data Science
+#### 🧠 Programming Languages, Machine Learning & Data Science
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,opencv,numpy,pandas&theme=dark" alt="ML & Data Stack" />
+  <img src="https://skillicons.dev/icons?i=python,c,cpp,pytorch,tensorflow,sklearn,opencv,numpy,pandas&theme=dark" alt="Languages & ML Stack" />
 </p>
 
 #### 🌐 Web Development & Frontend
@@ -139,20 +139,15 @@ philosophy: "Code is like humor. When you have to explain it, it’s bad."
 
 <div align="center">
 
-  <!-- Real-time GitHub Stats & Language breakdown -->
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=kundurohit544&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5D4&text_color=FFFFFF&icon_color=00F5D4" height="175" alt="GitHub Stats" />
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=kundurohit544&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5D4&text_color=FFFFFF" height="175" alt="Top Languages" />
-
-  <br/><br/>
-
-  <!-- GitHub Streak Counter -->
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kundurohit544&theme=tokyonight&hide_border=true&background=0D1117&ring=00F5D4&fire=00F5D4&currStreakLabel=00F5D4" alt="GitHub Streak" />
+  <!-- GitHub Stats & Streak Counter -->
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=kundurohit544&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5D4&text_color=FFFFFF&icon_color=00F5D4" height="180" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kundurohit544&theme=tokyonight&hide_border=true&background=0D1117&ring=00F5D4&fire=00F5D4&currStreakLabel=00F5D4" height="180" alt="GitHub Streak" />
 
   <br/><br/>
 
   <!-- Repository & Profile Summary Breakdown -->
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kundurohit544&theme=tokyonight" width="48%" alt="Profile Details" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kundurohit544&theme=tokyonight" width="48%" alt="Repos per Language" />
+  <img src="https://raw.githubusercontent.com/kundurohit544/kundurohit544/main/assets/top-languages.svg" width="48%" alt="Top Languages: Python, C++, C" />
 
 </div>
 
