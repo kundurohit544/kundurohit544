@@ -1,123 +1,162 @@
-<svg width="100%" height="200" viewBox="0 0 850 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="300" viewBox="0 0 920 300" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090d16" />
-      <stop offset="50%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#080c14" />
+      <stop offset="0%" stop-color="#060913" />
+      <stop offset="50%" stop-color="#0B0F19" />
+      <stop offset="100%" stop-color="#050811" />
     </linearGradient>
 
-    <!-- Wave 1 Gradient -->
-    <linearGradient id="wave1Grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F5D4" stop-opacity="0.3" />
-      <stop offset="50%" stop-color="#7928CA" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#00F5D4" stop-opacity="0.3" />
+    <!-- Neon Text Gradient -->
+    <linearGradient id="cyberTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5D4" />
+      <stop offset="35%" stop-color="#38BDF8" />
+      <stop offset="70%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#00F5D4" />
     </linearGradient>
 
-    <!-- Wave 2 Gradient -->
-    <linearGradient id="wave2Grad" x1="100%" y1="0%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#7928CA" stop-opacity="0.6" />
-      <stop offset="50%" stop-color="#00F5D4" stop-opacity="0.7" />
-      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0.6" />
-    </linearGradient>
+    <!-- Grid Pattern -->
+    <pattern id="cyberGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#00F5D4" stroke-opacity="0.08" stroke-width="1" />
+    </pattern>
 
-    <!-- Text Neon Gradient -->
-    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="40%" stop-color="#E2E8F0" />
-      <stop offset="75%" stop-color="#00F5D4" />
-      <stop offset="100%" stop-color="#38BDF8" />
-    </linearGradient>
-
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <!-- Glow Filter for Ambient Orbs -->
+    <filter id="ambientGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="65" result="blur" />
     </filter>
 
-    <filter id="cardGlow" x="-5%" y="-10%" width="110%" height="120%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <!-- Intense Text Glow -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feComponentTransfer in="blur" result="boost">
+        <feFuncA type="linear" slope="1.4" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="boost" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
     </filter>
 
     <style>
-      @keyframes waveFloat1 {
-        0%, 100% { d: path("M 0,140 Q 212,110 425,140 T 850,140 L 850,200 L 0,200 Z"); }
-        50% { d: path("M 0,140 Q 212,170 425,140 T 850,140 L 850,200 L 0,200 Z"); }
+      .mono-font {
+        font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Courier New', monospace;
       }
-      @keyframes waveFloat2 {
-        0%, 100% { d: path("M 0,165 Q 212,185 425,160 T 850,165 L 850,200 L 0,200 Z"); }
-        50% { d: path("M 0,165 Q 212,145 425,170 T 850,165 L 850,200 L 0,200 Z"); }
+      .sans-font {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
       }
       @keyframes pulseGlow {
-        0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 12px rgba(0,245,212,0.4)); }
-        50% { opacity: 1; filter: drop-shadow(0 0 24px rgba(0,245,212,0.85)); }
+        0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 14px rgba(0, 245, 212, 0.5)); }
+        50% { opacity: 1; filter: drop-shadow(0 0 26px rgba(0, 245, 212, 0.9)); }
       }
-      @keyframes starTwinkle {
-        0%, 100% { opacity: 0.2; transform: scale(0.8); }
-        50% { opacity: 0.9; transform: scale(1.3); }
+      @keyframes blinkDot {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
       }
-      @keyframes badgeShine {
-        0%, 100% { stroke-dashoffset: 0; }
-        50% { stroke-dashoffset: 60; }
-      }
-      .title-text {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        font-weight: 800;
-        font-size: 52px;
-        letter-spacing: 2px;
+      .title-name {
+        font-weight: 900;
+        font-size: 58px;
+        letter-spacing: 3.5px;
+        fill: url(#cyberTextGrad);
         animation: pulseGlow 4s ease-in-out infinite;
       }
-      .subtitle-text {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        font-weight: 500;
-        font-size: 19px;
-        letter-spacing: 4px;
-        fill: #94A3B8;
+      .status-pulse {
+        animation: blinkDot 2s infinite ease-in-out;
       }
-      .tag-text {
-        font-family: 'SF Mono', Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-        font-size: 13px;
-        font-weight: 600;
-        fill: #00F5D4;
-        letter-spacing: 1.5px;
-      }
-      .star1 { animation: starTwinkle 3s ease-in-out infinite; transform-origin: 120px 45px; }
-      .star2 { animation: starTwinkle 4s ease-in-out infinite 1s; transform-origin: 730px 50px; }
-      .star3 { animation: starTwinkle 2.5s ease-in-out infinite 0.5s; transform-origin: 220px 105px; }
-      .star4 { animation: starTwinkle 3.5s ease-in-out infinite 1.5s; transform-origin: 660px 110px; }
-      .wave1 { animation: waveFloat1 6s ease-in-out infinite; }
-      .wave2 { animation: waveFloat2 5s ease-in-out infinite; }
     </style>
   </defs>
 
-  <!-- Card Background with rounded corners and border -->
-  <rect width="850" height="200" rx="16" fill="url(#bgGrad)" />
-  <rect width="848" height="198" x="1" y="1" rx="15" fill="none" stroke="#1E293B" stroke-width="1.5" />
+  <!-- Container Box with Rounded Corners -->
+  <rect width="920" height="300" rx="14" fill="url(#bgGrad)" stroke="#172033" stroke-width="2" />
 
-  <!-- Animated Decorative Stars / Tech Particles -->
-  <circle cx="120" cy="45" r="2" fill="#00F5D4" class="star1" />
-  <circle cx="730" cy="50" r="2.5" fill="#38BDF8" class="star2" />
-  <circle cx="220" cy="105" r="1.5" fill="#A78BFA" class="star3" />
-  <circle cx="660" cy="110" r="2" fill="#00F5D4" class="star4" />
-  <circle cx="780" cy="95" r="1.5" fill="#E2E8F0" class="star1" />
-  <circle cx="90" cy="115" r="1.5" fill="#38BDF8" class="star2" />
+  <!-- Cyber Grid Overlay -->
+  <rect width="920" height="300" rx="14" fill="url(#cyberGrid)" />
 
-  <!-- Top Center Accent Tag -->
-  <g transform="translate(345, 18)">
-    <rect width="160" height="24" rx="12" fill="#1E293B" stroke="#00F5D4" stroke-opacity="0.4" stroke-width="1" />
-    <circle cx="15" cy="12" r="4" fill="#00F5D4">
-      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
-    </circle>
-    <text x="26" y="16.5" class="tag-text">AI / ML SPECIALIST</text>
+  <!-- Ambient Neon Glow Spheres -->
+  <circle cx="160" cy="150" r="140" fill="#00F5D4" opacity="0.08" filter="url(#ambientGlow)" />
+  <circle cx="820" cy="150" r="150" fill="#9333EA" opacity="0.14" filter="url(#ambientGlow)" />
+
+  <!-- HUD Corner Brackets (Cyan Top, Purple Bottom) -->
+  <path d="M 14 36 L 14 14 L 36 14" stroke="#00F5D4" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <path d="M 884 14 L 906 14 L 906 36" stroke="#00F5D4" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <path d="M 14 264 L 14 286 L 36 286" stroke="#A855F7" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <path d="M 884 286 L 906 286 L 906 264" stroke="#A855F7" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+  <!-- TOP LEFT HUD PILL: System Status -->
+  <g transform="translate(30, 24)">
+    <rect width="360" height="28" rx="6" fill="#0D1424" stroke="#1E2E4A" stroke-width="1.2" />
+    <circle cx="15" cy="14" r="4" fill="#10B981" class="status-pulse" />
+    <text x="27" y="18" class="mono-font" font-size="11.5px" font-weight="700" fill="#64748B" letter-spacing="1px">
+      SYSTEM: <tspan fill="#00F5D4">ONLINE</tspan> <tspan fill="#334155">|</tspan> <tspan fill="#94A3B8">AI &amp; ML ENGINEER</tspan>
+    </text>
   </g>
 
-  <!-- Main Animated Waves at Bottom -->
-  <path class="wave1" fill="url(#wave1Grad)" d="M 0,140 Q 212,110 425,140 T 850,140 L 850,200 L 0,200 Z" />
-  <path class="wave2" fill="url(#wave2Grad)" d="M 0,165 Q 212,185 425,160 T 850,165 L 850,200 L 0,200 Z" />
+  <!-- TOP RIGHT HUD PILL: Hireable / Collab -->
+  <g transform="translate(715, 24)">
+    <rect width="175" height="28" rx="6" fill="#0D1424" stroke="#00F5D4" stroke-opacity="0.4" stroke-width="1.2" />
+    <circle cx="15" cy="14" r="4" fill="#00F5D4" class="status-pulse" />
+    <text x="27" y="18" class="mono-font" font-size="11.5px" font-weight="700" fill="#00F5D4" letter-spacing="0.5px">
+      HIREABLE <tspan fill="#64748B" font-size="10.5px">v2.4.0_PROD</tspan>
+    </text>
+  </g>
 
-  <!-- Main Name Header -->
-  <g text-anchor="middle">
-    <text x="425" y="98" fill="url(#titleGrad)" class="title-text">ROHIT KUNDU</text>
-    <text x="425" y="132" class="subtitle-text">B.TECH · ARTIFICIAL INTELLIGENCE &amp; MACHINE LEARNING</text>
+  <!-- LEFT SECTION: Main Developer Identity -->
+  <g transform="translate(32, 92)">
+    <!-- Tech Pre-Heading -->
+    <text x="0" y="0" class="mono-font" font-size="13px" font-weight="700" fill="#00F5D4" letter-spacing="2px">
+      INITIALIZING DIGITAL BUILDER INTERFACE //
+    </text>
+
+    <!-- Main Glowing Name -->
+    <text x="0" y="54" class="sans-font title-name" filter="url(#neonGlow)">ROHIT KUNDU</text>
+
+    <!-- Subtitle Role Tags -->
+    <text x="2" y="90" class="sans-font" font-size="15px" font-weight="700" fill="#FFFFFF" letter-spacing="1.5px">
+      AI &amp; ML ARCHITECT <tspan fill="#00F5D4">//</tspan> PYTHON <tspan fill="#00F5D4">//</tspan> DEEP LEARNING <tspan fill="#00F5D4">//</tspan> C++
+    </text>
+
+    <!-- Terminal Command Pill -->
+    <g transform="translate(0, 108)">
+      <rect width="560" height="32" rx="6" fill="#0D1424" stroke="#1E2E4A" stroke-width="1.2" />
+      <text x="14" y="20.5" class="mono-font" font-size="12.5px" font-weight="500" fill="#94A3B8">
+        <tspan fill="#00F5D4">&gt;</tspan> Turning bold ideas into scalable, high-performance intelligent systems
+      </text>
+    </g>
+  </g>
+
+  <!-- RIGHT SECTION: Floating Code Window Card -->
+  <g transform="translate(645, 84)">
+    <!-- Floating Card Background -->
+    <rect width="245" height="158" rx="10" fill="#0B101E" stroke="#1E2E4A" stroke-width="1.5" />
+
+    <!-- Card Corner Accent -->
+    <path d="M 235 158 L 245 158 L 245 148" stroke="#A855F7" stroke-width="2" fill="none" />
+
+    <!-- Top Badge Tab (Pink/Purple Border) -->
+    <g transform="translate(14, -12)">
+      <rect width="105" height="25" rx="6" fill="#151326" stroke="#F43F5E" stroke-opacity="0.8" stroke-width="1.4" />
+      <text x="52" y="16.5" text-anchor="middle" class="mono-font" font-size="11px" font-weight="700" fill="#F43F5E">
+        🎯 AI &amp; ML
+      </text>
+    </g>
+
+    <!-- Code Header Filename -->
+    <text x="125" y="13" class="mono-font" font-size="11px" font-weight="500" fill="#475569">stack.json</text>
+
+    <!-- JSON / Code lines inside card -->
+    <g transform="translate(18, 38)" class="mono-font" font-size="11.5px">
+      <text x="0" y="0" fill="#64748B">{</text>
+      <text x="12" y="18" fill="#38BDF8">"core"<tspan fill="#64748B">:</tspan> <tspan fill="#A78BFA">"Python"</tspan><tspan fill="#64748B">,</tspan></text>
+      <text x="12" y="36" fill="#38BDF8">"models"<tspan fill="#64748B">:</tspan> <tspan fill="#00F5D4">"PyTorch"</tspan><tspan fill="#64748B">,</tspan></text>
+      <text x="12" y="54" fill="#38BDF8">"systems"<tspan fill="#64748B">:</tspan> <tspan fill="#F43F5E">"C / C++"</tspan></text>
+      <text x="0" y="72" fill="#64748B">}</text>
+    </g>
+
+    <!-- Bottom Status Bar inside Card -->
+    <g transform="translate(16, 122)">
+      <rect width="213" height="24" rx="5" fill="#070C16" stroke="#1E2E4A" stroke-width="1" />
+      <text x="106" y="16" text-anchor="middle" class="mono-font" font-size="10.5px" font-weight="600" fill="#94A3B8" letter-spacing="0.5px">
+        STATUS: <tspan fill="#00F5D4">READY TO SHIP</tspan> 🚀
+      </text>
+    </g>
   </g>
 </svg>
