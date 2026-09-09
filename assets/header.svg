@@ -1,160 +1,153 @@
-<svg width="100%" height="300" viewBox="0 0 920 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="270" viewBox="0 0 850 270" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#060913" />
-      <stop offset="50%" stop-color="#0B0F19" />
-      <stop offset="100%" stop-color="#050811" />
+      <stop offset="50%" stop-color="#0A0E1A" />
+      <stop offset="100%" stop-color="#050711" />
     </linearGradient>
 
     <!-- Neon Text Gradient -->
     <linearGradient id="cyberTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00F5D4" />
-      <stop offset="35%" stop-color="#38BDF8" />
-      <stop offset="70%" stop-color="#818CF8" />
-      <stop offset="100%" stop-color="#00F5D4" />
+      <stop offset="45%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#818CF8" />
     </linearGradient>
 
-    <!-- Grid Pattern -->
-    <pattern id="cyberGrid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#00F5D4" stroke-opacity="0.08" stroke-width="1" />
+    <!-- Cyber Grid Pattern -->
+    <pattern id="cyberGrid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M 26 0 L 0 0 0 26" fill="none" stroke="#00F5D4" stroke-opacity="0.06" stroke-width="1" />
     </pattern>
 
-    <!-- Glow Filter for Ambient Orbs -->
-    <filter id="ambientGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="65" result="blur" />
-    </filter>
+    <!-- Ambient Neon Glow Spheres -->
+    <radialGradient id="cyanOrb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F5D4" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#00F5D4" stop-opacity="0" />
+    </radialGradient>
 
-    <!-- Intense Text Glow -->
-    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="7" result="blur" />
-      <feComponentTransfer in="blur" result="boost">
-        <feFuncA type="linear" slope="1.4" />
-      </feComponentTransfer>
-      <feMerge>
-        <feMergeNode in="boost" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
+    <radialGradient id="purpleOrb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9333EA" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#9333EA" stop-opacity="0" />
+    </radialGradient>
 
     <style>
       .mono-font {
         font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Courier New', monospace;
       }
       .sans-font {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
       }
-      @keyframes pulseGlow {
-        0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 14px rgba(0, 245, 212, 0.5)); }
-        50% { opacity: 1; filter: drop-shadow(0 0 26px rgba(0, 245, 212, 0.9)); }
+      @keyframes pulseText {
+        0%, 100% { filter: drop-shadow(0 0 10px rgba(0, 245, 212, 0.4)); }
+        50% { filter: drop-shadow(0 0 20px rgba(0, 245, 212, 0.75)); }
       }
       @keyframes blinkDot {
         0%, 100% { opacity: 1; }
-        50% { opacity: 0.3; }
+        50% { opacity: 0.35; }
       }
       .title-name {
         font-weight: 900;
-        font-size: 58px;
-        letter-spacing: 3.5px;
+        font-size: 46px;
+        letter-spacing: 2px;
         fill: url(#cyberTextGrad);
-        animation: pulseGlow 4s ease-in-out infinite;
+        animation: pulseText 4s ease-in-out infinite;
       }
-      .status-pulse {
+      .status-dot {
         animation: blinkDot 2s infinite ease-in-out;
       }
     </style>
   </defs>
 
   <!-- Container Box with Rounded Corners -->
-  <rect width="920" height="300" rx="14" fill="url(#bgGrad)" stroke="#172033" stroke-width="2" />
+  <rect x="1" y="1" width="848" height="268" rx="12" fill="url(#bgGrad)" stroke="#162032" stroke-width="1.5" />
 
   <!-- Cyber Grid Overlay -->
-  <rect width="920" height="300" rx="14" fill="url(#cyberGrid)" />
+  <rect x="1" y="1" width="848" height="268" rx="12" fill="url(#cyberGrid)" />
 
-  <!-- Ambient Neon Glow Spheres -->
-  <circle cx="160" cy="150" r="140" fill="#00F5D4" opacity="0.08" filter="url(#ambientGlow)" />
-  <circle cx="820" cy="150" r="150" fill="#9333EA" opacity="0.14" filter="url(#ambientGlow)" />
+  <!-- Ambient Glow Spheres (Cyan left, Purple right) -->
+  <circle cx="160" cy="135" r="150" fill="url(#cyanOrb)" />
+  <circle cx="720" cy="135" r="160" fill="url(#purpleOrb)" />
 
   <!-- HUD Corner Brackets (Cyan Top, Purple Bottom) -->
-  <path d="M 14 36 L 14 14 L 36 14" stroke="#00F5D4" stroke-width="2.5" stroke-linecap="round" fill="none" />
-  <path d="M 884 14 L 906 14 L 906 36" stroke="#00F5D4" stroke-width="2.5" stroke-linecap="round" fill="none" />
-  <path d="M 14 264 L 14 286 L 36 286" stroke="#A855F7" stroke-width="2.5" stroke-linecap="round" fill="none" />
-  <path d="M 884 286 L 906 286 L 906 264" stroke="#A855F7" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <path d="M 14 34 L 14 14 L 34 14" stroke="#00F5D4" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <path d="M 816 14 L 836 14 L 836 34" stroke="#00F5D4" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <path d="M 14 236 L 14 256 L 34 256" stroke="#A855F7" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <path d="M 816 256 L 836 256 L 836 236" stroke="#A855F7" stroke-width="2.2" stroke-linecap="round" fill="none" />
 
   <!-- TOP LEFT HUD PILL: System Status -->
-  <g transform="translate(30, 24)">
-    <rect width="360" height="28" rx="6" fill="#0D1424" stroke="#1E2E4A" stroke-width="1.2" />
-    <circle cx="15" cy="14" r="4" fill="#10B981" class="status-pulse" />
-    <text x="27" y="18" class="mono-font" font-size="11.5px" font-weight="700" fill="#64748B" letter-spacing="1px">
+  <g transform="translate(30, 20)">
+    <rect width="320" height="26" rx="5" fill="#0B1220" stroke="#1E2E4A" stroke-width="1.2" />
+    <circle cx="14" cy="13" r="3.5" fill="#10B981" class="status-dot" />
+    <text x="25" y="17" class="mono-font" font-size="11px" font-weight="700" fill="#64748B" letter-spacing="0.8px">
       SYSTEM: <tspan fill="#00F5D4">ONLINE</tspan> <tspan fill="#334155">|</tspan> <tspan fill="#94A3B8">AI &amp; ML ENGINEER</tspan>
     </text>
   </g>
 
-  <!-- TOP RIGHT HUD PILL: Hireable / Collab -->
-  <g transform="translate(715, 24)">
-    <rect width="175" height="28" rx="6" fill="#0D1424" stroke="#00F5D4" stroke-opacity="0.4" stroke-width="1.2" />
-    <circle cx="15" cy="14" r="4" fill="#00F5D4" class="status-pulse" />
-    <text x="27" y="18" class="mono-font" font-size="11.5px" font-weight="700" fill="#00F5D4" letter-spacing="0.5px">
-      HIREABLE <tspan fill="#64748B" font-size="10.5px">v2.4.0_PROD</tspan>
+  <!-- TOP RIGHT HUD PILL: Hireable -->
+  <g transform="translate(662, 20)">
+    <rect width="158" height="26" rx="5" fill="#0B1220" stroke="#00F5D4" stroke-opacity="0.4" stroke-width="1.2" />
+    <circle cx="14" cy="13" r="3.5" fill="#00F5D4" class="status-dot" />
+    <text x="25" y="17" class="mono-font" font-size="11px" font-weight="700" fill="#00F5D4" letter-spacing="0.5px">
+      HIREABLE <tspan fill="#64748B" font-size="10px">v2.4.0_PROD</tspan>
     </text>
   </g>
 
-  <!-- LEFT SECTION: Main Developer Identity -->
-  <g transform="translate(32, 92)">
+  <!-- LEFT HERO SECTION -->
+  <g transform="translate(30, 78)">
     <!-- Tech Pre-Heading -->
-    <text x="0" y="0" class="mono-font" font-size="13px" font-weight="700" fill="#00F5D4" letter-spacing="2px">
+    <text x="0" y="0" class="mono-font" font-size="12px" font-weight="700" fill="#00F5D4" letter-spacing="1.5px">
       INITIALIZING DIGITAL BUILDER INTERFACE //
     </text>
 
     <!-- Main Glowing Name -->
-    <text x="0" y="54" class="sans-font title-name" filter="url(#neonGlow)">ROHIT KUNDU</text>
+    <text x="0" y="46" class="sans-font title-name">ROHIT KUNDU</text>
 
-    <!-- Subtitle Role Tags -->
-    <text x="2" y="90" class="sans-font" font-size="15px" font-weight="700" fill="#FFFFFF" letter-spacing="1.5px">
+    <!-- Subtitle Roles -->
+    <text x="1" y="78" class="sans-font" font-size="14px" font-weight="700" fill="#FFFFFF" letter-spacing="1.2px">
       AI &amp; ML ARCHITECT <tspan fill="#00F5D4">//</tspan> PYTHON <tspan fill="#00F5D4">//</tspan> DEEP LEARNING <tspan fill="#00F5D4">//</tspan> C++
     </text>
 
-    <!-- Terminal Command Pill -->
-    <g transform="translate(0, 108)">
-      <rect width="560" height="32" rx="6" fill="#0D1424" stroke="#1E2E4A" stroke-width="1.2" />
-      <text x="14" y="20.5" class="mono-font" font-size="12.5px" font-weight="500" fill="#94A3B8">
+    <!-- Terminal Prompt Command Box -->
+    <g transform="translate(0, 96)">
+      <rect width="500" height="30" rx="5" fill="#0A101C" stroke="#1E2E4A" stroke-width="1.2" />
+      <text x="12" y="19.5" class="mono-font" font-size="11.5px" font-weight="500" fill="#94A3B8">
         <tspan fill="#00F5D4">&gt;</tspan> Turning bold ideas into scalable, high-performance intelligent systems
       </text>
     </g>
   </g>
 
-  <!-- RIGHT SECTION: Floating Code Window Card -->
-  <g transform="translate(645, 84)">
-    <!-- Floating Card Background -->
-    <rect width="245" height="158" rx="10" fill="#0B101E" stroke="#1E2E4A" stroke-width="1.5" />
+  <!-- RIGHT FLOATING CODE CARD -->
+  <g transform="translate(565, 68)">
+    <!-- Card Body -->
+    <rect y="10" width="255" height="142" rx="8" fill="#090E1A" stroke="#1E2E4A" stroke-width="1.2" />
 
-    <!-- Card Corner Accent -->
-    <path d="M 235 158 L 245 158 L 245 148" stroke="#A855F7" stroke-width="2" fill="none" />
+    <!-- Card Bottom-Right Accent Corner -->
+    <path d="M 245 152 L 255 152 L 255 142" stroke="#A855F7" stroke-width="2" fill="none" />
 
-    <!-- Top Badge Tab (Pink/Purple Border) -->
-    <g transform="translate(14, -12)">
-      <rect width="105" height="25" rx="6" fill="#151326" stroke="#F43F5E" stroke-opacity="0.8" stroke-width="1.4" />
-      <text x="52" y="16.5" text-anchor="middle" class="mono-font" font-size="11px" font-weight="700" fill="#F43F5E">
+    <!-- Top Badge Tab (Magenta border) -->
+    <g transform="translate(12, 0)">
+      <rect width="98" height="22" rx="5" fill="#161124" stroke="#F43F5E" stroke-width="1.2" />
+      <text x="49" y="15" text-anchor="middle" class="mono-font" font-size="10.5px" font-weight="700" fill="#F43F5E">
         🎯 AI &amp; ML
       </text>
     </g>
 
-    <!-- Code Header Filename -->
-    <text x="125" y="13" class="mono-font" font-size="11px" font-weight="500" fill="#475569">stack.json</text>
+    <!-- Filename to the right of tab -->
+    <text x="120" y="16" class="mono-font" font-size="11px" font-weight="500" fill="#64748B">stack.json</text>
 
-    <!-- JSON / Code lines inside card -->
-    <g transform="translate(18, 38)" class="mono-font" font-size="11.5px">
+    <!-- JSON Snippet -->
+    <g transform="translate(18, 42)" class="mono-font" font-size="11.5px">
       <text x="0" y="0" fill="#64748B">{</text>
-      <text x="12" y="18" fill="#38BDF8">"core"<tspan fill="#64748B">:</tspan> <tspan fill="#A78BFA">"Python"</tspan><tspan fill="#64748B">,</tspan></text>
-      <text x="12" y="36" fill="#38BDF8">"models"<tspan fill="#64748B">:</tspan> <tspan fill="#00F5D4">"PyTorch"</tspan><tspan fill="#64748B">,</tspan></text>
-      <text x="12" y="54" fill="#38BDF8">"systems"<tspan fill="#64748B">:</tspan> <tspan fill="#F43F5E">"C / C++"</tspan></text>
-      <text x="0" y="72" fill="#64748B">}</text>
+      <text x="12" y="16" fill="#38BDF8">"core"<tspan fill="#64748B">:</tspan> <tspan fill="#A78BFA">"Python"</tspan><tspan fill="#64748B">,</tspan></text>
+      <text x="12" y="32" fill="#38BDF8">"models"<tspan fill="#64748B">:</tspan> <tspan fill="#00F5D4">"PyTorch"</tspan><tspan fill="#64748B">,</tspan></text>
+      <text x="12" y="48" fill="#38BDF8">"systems"<tspan fill="#64748B">:</tspan> <tspan fill="#F43F5E">"C / C++"</tspan></text>
+      <text x="0" y="64" fill="#64748B">}</text>
     </g>
 
-    <!-- Bottom Status Bar inside Card -->
-    <g transform="translate(16, 122)">
-      <rect width="213" height="24" rx="5" fill="#070C16" stroke="#1E2E4A" stroke-width="1" />
-      <text x="106" y="16" text-anchor="middle" class="mono-font" font-size="10.5px" font-weight="600" fill="#94A3B8" letter-spacing="0.5px">
+    <!-- Bottom Status Pill inside Card -->
+    <g transform="translate(14, 118)">
+      <rect width="227" height="24" rx="4" fill="#060A12" stroke="#1E2E4A" stroke-width="1" />
+      <text x="113" y="16" text-anchor="middle" class="mono-font" font-size="10px" font-weight="700" fill="#94A3B8" letter-spacing="0.5px">
         STATUS: <tspan fill="#00F5D4">READY TO SHIP</tspan> 🚀
       </text>
     </g>
