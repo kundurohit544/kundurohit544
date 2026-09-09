@@ -40,24 +40,34 @@
 
 ### 💫 About Me
 
-```yaml
-user: Rohit Kundu
-status: B.Tech Student & AI/ML Developer
-current_focus:
-  - Deep Learning Architectures & Computer Vision
-  - High-Efficiency Machine Learning Pipelines
-  - Modern Responsive Web Applications
-core_passions:
-  - Transforming complex data into actionable intelligent systems
-  - Developing robust backend scripts & interactive UI dashboards
-philosophy: "Code is like humor. When you have to explain it, it’s bad."
-```
+<div align="center">
+  <img src="https://raw.githubusercontent.com/kundurohit544/kundurohit544/main/assets/about-terminal.svg" width="100%" alt="Developer Terminal" />
+</div>
 
-- 🎓 **Academic Journey**: Pursuing **B.Tech** specializing in **Artificial Intelligence & Machine Learning**.
-- 💡 **Engineering Mindset**: Proficient in **Python**, algorithm design, statistical modeling, and data manipulation.
-- 🔭 **Current Pursuits**: Designing scalable deep learning experiments, computer vision pipelines, and full-stack web utilities.
-- 🌱 **Learning & Exploring**: MLOps, Model Quantization, Transformers, Large Language Models (LLMs).
-- ⚡ **Fun Fact**: When I'm not tuning hyperparameters or writing code, you'll find me exploring emerging open-source tech or reverse-engineering systems.
+<br/>
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🎓 Academic Journey</h4>
+      <p>Pursuing <b>B.Tech</b> with a core specialization in <b>Artificial Intelligence &amp; Machine Learning</b>, building strong mathematical foundations in linear algebra, probability, and algorithmic optimization.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h4>💡 Engineering Arsenal</h4>
+      <p>Proficient in <b>Python, C++, and C</b> for high-performance computing, data structures, system-level design, and scalable AI workflows.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🔭 Current Pursuits</h4>
+      <p>Designing neural network architectures, computer vision pipelines, and exploring transformer models and fine-tuning techniques.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h4>⚡ Personal Philosophy</h4>
+      <p><i>"Code is like humor. When you have to explain it, it’s bad."</i> Dedicated to elegant software architecture, clean syntax, and rapid learning.</p>
+    </td>
+  </tr>
+</table>
 
 ---
 
