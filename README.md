@@ -98,47 +98,27 @@
 
 <table align="center" width="100%">
   <tr>
-    <td width="50%" valign="top">
-      <h3 align="center">🛰️ Sky Pulse</h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Sky--Pulse-JavaScript%20%7C%20API-00F5D4?style=flat-square" alt="Sky Pulse" />
-      </p>
-      <p>Dynamic, responsive atmospheric tracking and weather analytics dashboard providing high-precision real-time metrics with intuitive visualization.</p>
-      <p align="center">
-        <a href="https://github.com/kundurohit544/sky-pulse"><b>View Project ➜</b></a>
-      </p>
+    <td width="50%" align="center">
+      <a href="https://github.com/kundurohit544/sky-pulse" target="_blank">
+        <img src="https://raw.githubusercontent.com/kundurohit544/kundurohit544/main/assets/card-skypulse.svg" width="100%" alt="Sky Pulse Project" />
+      </a>
     </td>
-    <td width="50%" valign="top">
-      <h3 align="center">📱 APKs Vault & AppVault</h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Vault-Distribution%20%7C%20Storage-7928CA?style=flat-square" alt="APKs Vault" />
-      </p>
-      <p>Secure distribution and repository system for Android applications, maintaining structured version management and instant downloads.</p>
-      <p align="center">
-        <a href="https://github.com/kundurohit544/apksvault"><b>View Project ➜</b></a>
-      </p>
+    <td width="50%" align="center">
+      <a href="https://github.com/kundurohit544/apksvault" target="_blank">
+        <img src="https://raw.githubusercontent.com/kundurohit544/kundurohit544/main/assets/card-apksvault.svg" width="100%" alt="APKs Vault Project" />
+      </a>
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <h3 align="center">💼 Interactive Portfolio</h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Portfolio-HTML5%20%7C%20CSS3%20%7C%20JS-FF0080?style=flat-square" alt="Portfolio" />
-      </p>
-      <p>Clean, modern, and high-performance developer portfolio showcasing technical experience, projects, and personal roadmap.</p>
-      <p align="center">
-        <a href="https://rohitkundu.netlify.app" target="_blank"><b>Live Site 🌐</b></a> &nbsp;•&nbsp; <a href="https://github.com/kundurohit544/portfolio"><b>Repository ➜</b></a>
-      </p>
+    <td width="50%" align="center">
+      <a href="https://rohitkundu.netlify.app" target="_blank">
+        <img src="https://raw.githubusercontent.com/kundurohit544/kundurohit544/main/assets/card-portfolio.svg" width="100%" alt="Interactive Portfolio Project" />
+      </a>
     </td>
-    <td width="50%" valign="top">
-      <h3 align="center">🌦️ Weather Application</h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Weather-Real--Time%20Data-0070F3?style=flat-square" alt="Weather Application" />
-      </p>
-      <p>Interactive weather discovery app with search caching, automated geo-location detection, and dynamic forecast graphs.</p>
-      <p align="center">
-        <a href="https://github.com/kundurohit544/weather-application"><b>View Project ➜</b></a>
-      </p>
+    <td width="50%" align="center">
+      <a href="https://github.com/kundurohit544/weather-application" target="_blank">
+        <img src="https://raw.githubusercontent.com/kundurohit544/kundurohit544/main/assets/card-weather.svg" width="100%" alt="Weather Application Project" />
+      </a>
     </td>
   </tr>
 </table>

@@ -1,0 +1,77 @@
+<svg width="100%" height="185" viewBox="0 0 410 185" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07101E" />
+      <stop offset="100%" stop-color="#040810" />
+    </linearGradient>
+
+    <pattern id="cardGrid4" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M 18 0 L 0 0 0 18" fill="none" stroke="#0284C7" stroke-opacity="0.05" stroke-width="0.8" />
+    </pattern>
+
+    <style>
+      .mono { font-family: 'SF Mono', Monaco, Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      @keyframes pulseDotBlue {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 1; }
+      }
+      @keyframes glowBorderBlue {
+        0%, 100% { stroke-opacity: 0.4; }
+        50% { stroke-opacity: 0.9; filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.5)); }
+      }
+      .blue-dot { animation: pulseDotBlue 2s infinite ease-in-out; }
+      .border-anim-blue { animation: glowBorderBlue 3s infinite ease-in-out; }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="410" height="185" rx="10" fill="url(#bg4)" stroke="#162E4A" stroke-width="1.2" />
+  <rect width="410" height="185" rx="10" fill="url(#cardGrid4)" />
+
+  <!-- Animated Corner Brackets -->
+  <path d="M 10 24 L 10 10 L 24 10" stroke="#0284C7" stroke-width="2" stroke-linecap="round" fill="none" class="border-anim-blue" />
+  <path d="M 386 10 L 400 10 L 400 24" stroke="#0284C7" stroke-width="2" stroke-linecap="round" fill="none" class="border-anim-blue" />
+  <path d="M 10 161 L 10 175 L 24 175" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" fill="none" class="border-anim-blue" />
+  <path d="M 386 175 L 400 175 L 400 161" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" fill="none" class="border-anim-blue" />
+
+  <!-- Header: Title & Status Badge -->
+  <g transform="translate(20, 24)">
+    <text x="0" y="8" class="sans" font-size="17px" font-weight="800" fill="#FFFFFF">
+      🌦️ Weather Application
+    </text>
+
+    <!-- Status Pill -->
+    <g transform="translate(245, -8)">
+      <rect width="115" height="22" rx="11" fill="#0C1A2E" stroke="#0284C7" stroke-opacity="0.4" stroke-width="1" />
+      <circle cx="12" cy="11" r="3.5" fill="#38BDF8" class="blue-dot" />
+      <text x="22" y="14.5" class="mono" font-size="9.5px" font-weight="700" fill="#38BDF8" letter-spacing="0.5px">REAL-TIME</text>
+    </g>
+  </g>
+
+  <!-- Tech Badges -->
+  <g transform="translate(20, 52)">
+    <rect width="82" height="19" rx="4" fill="#11243C" stroke="#162E4A" stroke-width="1" />
+    <text x="41" y="13" text-anchor="middle" class="mono" font-size="9.5px" font-weight="600" fill="#38BDF8">JAVASCRIPT</text>
+
+    <rect x="88" width="98" height="19" rx="4" fill="#11243C" stroke="#162E4A" stroke-width="1" />
+    <text x="137" y="13" text-anchor="middle" class="mono" font-size="9.5px" font-weight="600" fill="#60A5FA">GEOLOCATION</text>
+
+    <rect x="192" width="70" height="19" rx="4" fill="#11243C" stroke="#162E4A" stroke-width="1" />
+    <text x="227" y="13" text-anchor="middle" class="mono" font-size="9.5px" font-weight="600" fill="#94A3B8">API SYNC</text>
+  </g>
+
+  <!-- Description Text -->
+  <text x="20" y="94" class="sans" font-size="12px" fill="#94A3B8">
+    <tspan x="20" dy="0">Intelligent forecast discovery application with automated location detection,</tspan>
+    <tspan x="20" dy="16">search caching, and interactive dynamic weather trend charts.</tspan>
+  </text>
+
+  <!-- Bottom Action Button Bar -->
+  <g transform="translate(20, 136)">
+    <rect width="370" height="28" rx="6" fill="#0A1628" stroke="#162E4A" stroke-width="1" />
+    <text x="185" y="18" text-anchor="middle" class="mono" font-size="11px" font-weight="700" fill="#38BDF8" letter-spacing="0.8px">
+      VIEW PROJECT ➜
+    </text>
+  </g>
+</svg>

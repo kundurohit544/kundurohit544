@@ -1,0 +1,83 @@
+<svg width="100%" height="185" viewBox="0 0 410 185" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090E1A" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5D4" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <pattern id="cardGrid1" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M 18 0 L 0 0 0 18" fill="none" stroke="#00F5D4" stroke-opacity="0.05" stroke-width="0.8" />
+    </pattern>
+
+    <style>
+      .mono { font-family: 'SF Mono', Monaco, Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      @keyframes pulseDot {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 1; }
+      }
+      @keyframes glowBorder {
+        0%, 100% { stroke-opacity: 0.4; }
+        50% { stroke-opacity: 0.9; filter: drop-shadow(0 0 6px rgba(0, 245, 212, 0.4)); }
+      }
+      .live-dot { animation: pulseDot 2s infinite ease-in-out; }
+      .border-anim { animation: glowBorder 3s infinite ease-in-out; }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="410" height="185" rx="10" fill="url(#bg1)" stroke="#1E2E4A" stroke-width="1.2" />
+  <rect width="410" height="185" rx="10" fill="url(#cardGrid1)" />
+
+  <!-- Animated Corner Brackets -->
+  <path d="M 10 24 L 10 10 L 24 10" stroke="#00F5D4" stroke-width="2" stroke-linecap="round" fill="none" class="border-anim" />
+  <path d="M 386 10 L 400 10 L 400 24" stroke="#00F5D4" stroke-width="2" stroke-linecap="round" fill="none" class="border-anim" />
+  <path d="M 10 161 L 10 175 L 24 175" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" fill="none" class="border-anim" />
+  <path d="M 386 175 L 400 175 L 400 161" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" fill="none" class="border-anim" />
+
+  <!-- Header: Title & Status Badge -->
+  <g transform="translate(20, 24)">
+    <!-- Project Title -->
+    <text x="0" y="8" class="sans" font-size="17px" font-weight="800" fill="#FFFFFF">
+      🛰️ Sky Pulse
+    </text>
+
+    <!-- Status Pill -->
+    <g transform="translate(245, -8)">
+      <rect width="115" height="22" rx="11" fill="#0D1926" stroke="#00F5D4" stroke-opacity="0.4" stroke-width="1" />
+      <circle cx="12" cy="11" r="3.5" fill="#00F5D4" class="live-dot" />
+      <text x="22" y="14.5" class="mono" font-size="9.5px" font-weight="700" fill="#00F5D4" letter-spacing="0.5px">LIVE METRICS</text>
+    </g>
+  </g>
+
+  <!-- Tech Badges -->
+  <g transform="translate(20, 52)">
+    <rect width="82" height="19" rx="4" fill="#141E33" stroke="#1E2E4A" stroke-width="1" />
+    <text x="41" y="13" text-anchor="middle" class="mono" font-size="9.5px" font-weight="600" fill="#38BDF8">JAVASCRIPT</text>
+
+    <rect x="88" width="92" height="19" rx="4" fill="#141E33" stroke="#1E2E4A" stroke-width="1" />
+    <text x="134" y="13" text-anchor="middle" class="mono" font-size="9.5px" font-weight="600" fill="#00F5D4">WEATHER API</text>
+
+    <rect x="186" width="85" height="19" rx="4" fill="#141E33" stroke="#1E2E4A" stroke-width="1" />
+    <text x="228" y="13" text-anchor="middle" class="mono" font-size="9.5px" font-weight="600" fill="#94A3B8">DASHBOARD</text>
+  </g>
+
+  <!-- Description Text -->
+  <text x="20" y="94" class="sans" font-size="12px" fill="#94A3B8" width="370">
+    <tspan x="20" dy="0">Dynamic, real-time atmospheric tracking &amp; weather analytics</tspan>
+    <tspan x="20" dy="16">dashboard with interactive metrics visualization &amp; fast caching.</tspan>
+  </text>
+
+  <!-- Bottom Action Button Bar -->
+  <g transform="translate(20, 136)">
+    <rect width="370" height="28" rx="6" fill="#0D1424" stroke="#1E2E4A" stroke-width="1" />
+    <text x="185" y="18" text-anchor="middle" class="mono" font-size="11px" font-weight="700" fill="#00F5D4" letter-spacing="0.8px">
+      EXPLORE REPOSITORY ➜
+    </text>
+  </g>
+</svg>

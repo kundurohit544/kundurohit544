@@ -1,0 +1,80 @@
+<svg width="100%" height="185" viewBox="0 0 410 185" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081414" />
+      <stop offset="100%" stop-color="#040A0A" />
+    </linearGradient>
+
+    <pattern id="cardGrid3" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M 18 0 L 0 0 0 18" fill="none" stroke="#10B981" stroke-opacity="0.05" stroke-width="0.8" />
+    </pattern>
+
+    <style>
+      .mono { font-family: 'SF Mono', Monaco, Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      @keyframes pulseDotGreen {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 1; }
+      }
+      @keyframes glowBorderGreen {
+        0%, 100% { stroke-opacity: 0.4; }
+        50% { stroke-opacity: 0.9; filter: drop-shadow(0 0 6px rgba(16, 185, 129, 0.5)); }
+      }
+      .green-dot { animation: pulseDotGreen 2s infinite ease-in-out; }
+      .border-anim-green { animation: glowBorderGreen 3s infinite ease-in-out; }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="410" height="185" rx="10" fill="url(#bg3)" stroke="#13382D" stroke-width="1.2" />
+  <rect width="410" height="185" rx="10" fill="url(#cardGrid3)" />
+
+  <!-- Animated Corner Brackets -->
+  <path d="M 10 24 L 10 10 L 24 10" stroke="#10B981" stroke-width="2" stroke-linecap="round" fill="none" class="border-anim-green" />
+  <path d="M 386 10 L 400 10 L 400 24" stroke="#10B981" stroke-width="2" stroke-linecap="round" fill="none" class="border-anim-green" />
+  <path d="M 10 161 L 10 175 L 24 175" stroke="#00F5D4" stroke-width="2" stroke-linecap="round" fill="none" class="border-anim-green" />
+  <path d="M 386 175 L 400 175 L 400 161" stroke="#00F5D4" stroke-width="2" stroke-linecap="round" fill="none" class="border-anim-green" />
+
+  <!-- Header: Title & Status Badge -->
+  <g transform="translate(20, 24)">
+    <text x="0" y="8" class="sans" font-size="17px" font-weight="800" fill="#FFFFFF">
+      💼 Interactive Portfolio
+    </text>
+
+    <!-- Status Pill -->
+    <g transform="translate(245, -8)">
+      <rect width="115" height="22" rx="11" fill="#0A2218" stroke="#10B981" stroke-opacity="0.4" stroke-width="1" />
+      <circle cx="12" cy="11" r="3.5" fill="#10B981" class="green-dot" />
+      <text x="22" y="14.5" class="mono" font-size="9.5px" font-weight="700" fill="#10B981" letter-spacing="0.5px">LIVE DEMO</text>
+    </g>
+  </g>
+
+  <!-- Tech Badges -->
+  <g transform="translate(20, 52)">
+    <rect width="60" height="19" rx="4" fill="#0D2D20" stroke="#13382D" stroke-width="1" />
+    <text x="30" y="13" text-anchor="middle" class="mono" font-size="9.5px" font-weight="600" fill="#10B981">HTML5</text>
+
+    <rect x="66" width="55" height="19" rx="4" fill="#0D2D20" stroke="#13382D" stroke-width="1" />
+    <text x="93" y="13" text-anchor="middle" class="mono" font-size="9.5px" font-weight="600" fill="#00F5D4">CSS3</text>
+
+    <rect x="127" width="65" height="19" rx="4" fill="#0D2D20" stroke="#13382D" stroke-width="1" />
+    <text x="159" y="13" text-anchor="middle" class="mono" font-size="9.5px" font-weight="600" fill="#38BDF8">NETLIFY</text>
+
+    <rect x="198" width="90" height="19" rx="4" fill="#0D2D20" stroke="#13382D" stroke-width="1" />
+    <text x="243" y="13" text-anchor="middle" class="mono" font-size="9.5px" font-weight="600" fill="#94A3B8">RESPONSIVE</text>
+  </g>
+
+  <!-- Description Text -->
+  <text x="20" y="94" class="sans" font-size="12px" fill="#94A3B8">
+    <tspan x="20" dy="0">High-performance personal developer portfolio showcasing engineering</tspan>
+    <tspan x="20" dy="16">architecture, AI roadmap, and live deployed applications.</tspan>
+  </text>
+
+  <!-- Bottom Action Button Bar -->
+  <g transform="translate(20, 136)">
+    <rect width="370" height="28" rx="6" fill="#091E16" stroke="#13382D" stroke-width="1" />
+    <text x="185" y="18" text-anchor="middle" class="mono" font-size="11px" font-weight="700" fill="#10B981" letter-spacing="0.8px">
+      VISIT rohitkundu.netlify.app 🌐
+    </text>
+  </g>
+</svg>
