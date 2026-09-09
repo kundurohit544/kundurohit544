@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated Header Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,24,36&height=220&section=header&text=Rohit%20Kundu&fontSize=52&fontAlignY=38&animation=twinkle&fontColor=ffffff&desc=B.Tech%20%7C%20AI%20%26%20ML%20Engineer%20%7C%20Python%20Developer&descFontSize=20&descAlignY=62" width="100%" alt="Header Banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Rohit%20Kundu&fontSize=48&fontColor=ffffff&desc=AI%20%26%20Machine%20Learning%20%7C%20Python%20Developer&descFontSize=20" width="100%" alt="Header Banner" />
 
 <!-- Dynamic Typing SVG Animation -->
 <a href="https://github.com/kundurohit544">
@@ -20,7 +20,7 @@
 
 <!-- Quick Social Links with Neon Glow Effect -->
 <p align="center">
-  <a href="mailto:your_email@example.com" target="_blank">
+  <a href="mailto:kundurohit544@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
   <a href="https://www.linkedin.com/in/kundurohit544" target="_blank">
@@ -139,17 +139,20 @@ philosophy: "Code is like humor. When you have to explain it, it’s bad."
 
 <div align="center">
 
-  <img src="https://github-readme-stats.vercel.app/api?username=kundurohit544&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5D4&text_color=FFFFFF&icon_color=00F5D4" height="175" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kundurohit544&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5D4&text_color=FFFFFF" height="175" alt="Top Languages" />
+  <!-- Real-time GitHub Stats & Language breakdown -->
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=kundurohit544&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5D4&text_color=FFFFFF&icon_color=00F5D4" height="175" alt="GitHub Stats" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=kundurohit544&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5D4&text_color=FFFFFF" height="175" alt="Top Languages" />
 
   <br/><br/>
 
+  <!-- GitHub Streak Counter -->
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=kundurohit544&theme=tokyonight&hide_border=true&background=0D1117&ring=00F5D4&fire=00F5D4&currStreakLabel=00F5D4" alt="GitHub Streak" />
 
   <br/><br/>
 
-  <!-- Interactive Contribution Activity Graph -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kundurohit544&theme=tokyo-night&hide_border=true&area=true&color=00F5D4" width="95%" alt="Activity Graph" />
+  <!-- Repository & Profile Summary Breakdown -->
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kundurohit544&theme=tokyonight" width="48%" alt="Profile Details" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kundurohit544&theme=tokyonight" width="48%" alt="Repos per Language" />
 
 </div>
 
@@ -158,14 +161,12 @@ philosophy: "Code is like humor. When you have to explain it, it’s bad."
 ### 🐍 Contribution Graph Eating Snake
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/kundurohit544/kundurohit544/output/github-contribution-grid-snake.svg" alt="Snake Animation" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kundurohit544/kundurohit544/main/assets/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kundurohit544/kundurohit544/main/assets/github-contribution-grid-snake.svg" />
+    <img src="https://raw.githubusercontent.com/kundurohit544/kundurohit544/main/assets/github-contribution-grid-snake.svg" alt="Snake Animation" width="100%" />
+  </picture>
 </div>
-
-<details>
-  <summary><b>⚙️ How this snake animation works automatically (Click to expand)</b></summary>
-  <br/>
-  This animation is automatically generated every 24 hours using GitHub Actions via <code>platane/snk</code>. The included GitHub workflow file in <code>.github/workflows/snake.yml</code> will autonomously update the output branch whenever you push changes!
-</details>
 
 ---
 
@@ -178,7 +179,7 @@ philosophy: "Code is like humor. When you have to explain it, it’s bad."
 <a href="https://www.linkedin.com/in/kundurohit544" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
-<a href="mailto:your_email@example.com">
+<a href="mailto:kundurohit544@gmail.com">
   <img src="https://img.shields.io/badge/Email-Send_Message-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
 </a>
 <a href="https://github.com/kundurohit544?tab=repositories">
@@ -193,7 +194,7 @@ philosophy: "Code is like humor. When you have to explain it, it’s bad."
 <br/>
 
 <!-- Animated Footer Wave -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,24,36&height=120&section=footer" width="100%" alt="Footer Banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" alt="Footer Banner" />
 
 <p align="center">
   <i>⚡ Designed with passion & code by <a href="https://github.com/kundurohit544"><b>Rohit Kundu</b></a> • Star ⭐ this repo if you like it!</i>
